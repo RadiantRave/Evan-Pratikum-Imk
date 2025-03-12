@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    opacity: 100%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo_img{
+    width: 20%;
+    height: 20%;
+}
+
+.navbar a {
+    position:relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before{
+    content: '';
+    position:absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+}
+
+.navbar a:hover::before{
+    width: 100%;
+}
+
+.page-1{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.6)), 
+                            url("../assets/Backgrounds/background-img-rain.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.page-2{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.6)),
+                                url("../assets/Backgrounds/background-race.jpeg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    text-align: center;
+    z-index: 200;
+}
+
+.description{
+    padding-top: 100px;
+    margin-top: 60px;
+    border: 5px solid rgb(0, 0, 0);
+    height: 85%;
+    width: 60%;
+    justify-content: left;
+    margin-left: 60px;
+    background-color: rgb(0, 0, 0);
+    opacity: 65%;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.description h2{
+    margin-bottom: 30px;
+    margin-top: 20px;
+    color: white;
+    font-size: 55px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.description p{
+    color: white;
+    margin-top: 65px;
+    font-size: 30px;
+    text-align: left;
+    margin-left: 20px;
+    
+}
+
+.title{
+    text-align: center;
+}
+
+.title h1{
+    font-family: 'Permanent Marker', sans-serif;
+    font-size: 160px;
+    text-shadow: 0 0 30px #fff;
+    font-weight: 600;
+    line-height: 150px;
+}
+
+.title p{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid #fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
